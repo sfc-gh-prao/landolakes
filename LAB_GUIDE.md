@@ -1,7 +1,7 @@
 # Land O'Lakes × Snowflake
 ## Cortex Code: Hands-On Lab — Snowsight UI Edition
 
-**Duration:** 90 minutes (5 min setup + 85 min lab, includes discussion breaks)
+**Duration:** 90 minutes
 **Format:** Self-paced with guided checkpoints
 **Environment:** Your own Snowflake demo account — Snowsight (no local install required)
 
@@ -16,16 +16,16 @@
 1. Open your browser and go to your Snowflake account URL (provided by your instructor)
 2. Sign in with your credentials
 
-### Step 0.2 — Open a SQL Worksheet
+### Step 0.2 — Open a SQL Notebook
 
-1. In the left nav, click **Projects → Worksheets**
-2. Click **+ New** → **SQL Worksheet**
+1. In the left nav, click **Projects → Workspaces**
+2. Click **+ New** → **SQL Notebook**
 3. Confirm you are using the **`SYSADMIN`** role in the top-right corner
 
 ### Step 0.3 — Run the Setup Script
 
 1. Your instructor will share the contents of **`setup.sql`**
-2. Paste the entire script into your worksheet
+2. Paste the entire script into your notebook
 3. Click **Run All** (`Cmd+Shift+Enter` / `Ctrl+Shift+Enter`)
 4. Wait for the final validation query at the bottom — you should see row counts for all 8 tables
 
@@ -71,9 +71,9 @@ You'll work in the **`LOL_CORTEX_LAB`** database, `SALES_DATA` schema:
 
 ## How to Use Cortex Code in Snowsight
 
-1. In the left nav click **Projects → Worksheets**
+1. In the left nav click **Projects → Workspaces**
 2. Click **+ New** → **Cortex Code**
-3. The screen splits: **chat panel on the left**, **worksheet/output on the right**
+3. The screen splits: **chat panel on the left**, **notebook/output on the right**
 4. Type your prompt in the chat box at the bottom and press **Enter**
 
 **Power-user tip:** Type `#LOL_CORTEX_LAB.SALES_DATA.SALES` in a prompt to inject the table's column names and sample rows as context. Cortex Code writes smarter, more accurate queries when it knows your schema.
@@ -107,10 +107,6 @@ Using #LOL_CORTEX_LAB.SALES_DATA.PRODUCTS, show me a summary of the product cata
 ```
 Using #LOL_CORTEX_LAB.SALES_DATA.CUSTOMERS, summarize the customer base. How many customers are there by type and segment? Which regions are best represented?
 ```
-
-### ✋ Discussion Break (4 min)
-
-> **Question for the group:** How do you currently answer "what does our product portfolio look like and who are our customers?" — who do you ask, how long does it take, and how confident are you in the answer?
 
 ---
 
@@ -153,10 +149,6 @@ Show me total net revenue and number of transactions for each marketing campaign
 ```
 Compare revenue and average discount percentage across our four channels: Direct Retail, Food Service, Cooperative, and Distributor. Which channel has the best margin profile?
 ```
-
-### ✋ Discussion Break (4 min)
-
-> **Question for the group:** How many of those questions are on someone's backlog right now? How many of them did you just answer in under 3 minutes?
 
 ---
 
@@ -204,10 +196,6 @@ Fix the INVENTORY table: set any DAYS_OF_SUPPLY values that are negative to NULL
 Create a VIEW called V_DATA_QUALITY_SCORECARD in LOL_CORTEX_LAB.SALES_DATA. It should report key data quality metrics for the SALES and INVENTORY tables — percentage of null values in critical columns, count of invalid values (negative discounts, zero quantities), and a calculated overall health score from 0–100 for each table. This view should be runnable at any time to get a current picture of data quality.
 ```
 
-### ✋ Discussion Break (3 min)
-
-> **Question for the group:** Who owns data quality monitoring today? Is it proactive or reactive? What would it mean to have a live scorecard like this refreshing automatically every day?
-
 ---
 
 ## Module 4 — Data Engineering Pipelines (10 min)
@@ -247,10 +235,6 @@ Create a Snowflake Stream called STR_SALES_CDC on the SALES table to capture ins
 ```
 Create a Python UDF called UDF_MARGIN_HEALTH_LABEL that takes a float margin_pct as input and returns: 'EXCELLENT' for >= 40%, 'HEALTHY' for >= 25%, 'MARGINAL' for >= 10%, 'AT RISK' for below 10%, and 'UNKNOWN' for null. Then write a query that uses this UDF to label every product-category and customer-segment combination by margin health, based on the last 90 days of sales.
 ```
-
-### ✋ Discussion Break (4 min)
-
-> **Question for the group:** What manual ETL jobs or scheduled SQL scripts does your team currently maintain? Dynamic Tables + Tasks + Stored Procedures can replace most of those patterns — which ones would you target first?
 
 ---
 
@@ -305,10 +289,6 @@ On the Inventory Status tab, add a bar chart showing the count of alert-level it
 ```
 Add a short explanatory caption below each chart explaining what a business user should look for.
 ```
-
-### ✋ Discussion Break (3 min)
-
-> **Question for the group:** What are the top 3 dashboards your team regularly builds in Excel, Tableau, or PowerPoint that could live here instead — always live, always connected to fresh data?
 
 ---
 
@@ -463,10 +443,6 @@ What is the total estimated cost to bring all products currently below their reo
 ```
 
 ---
-
-### ✋ Discussion Break (2 min)
-
-> **Question for the group:** The Semantic View we just built captures business logic — how tables join, what "gross margin" means, what a "verified" answer looks like — that usually lives in someone's head or a Confluence doc. What definitions in your organization are worth capturing this way so every team works from the same source of truth?
 
 ---
 
