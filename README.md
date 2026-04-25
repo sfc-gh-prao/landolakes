@@ -1,8 +1,8 @@
 # Land O'Lakes × Snowflake
 ## Cortex Code: Hands-On Lab — Snowsight UI Edition
 
-**Duration:** 90 minutes
-**Format:** Self-paced with guided checkpoints
+**Duration:** 90 minutes  
+**Format:** Self-paced with guided checkpoints  
 **Environment:** Your own Snowflake demo account — Snowsight (no local install required)
 
 ---
