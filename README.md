@@ -54,6 +54,9 @@ At the bottom left hand corner, ensure you see "ACCOUNTADMIN" selected. This wil
 > ```
 > If any table shows 0, let your instructor know before moving on.
 
+> **Note** Because we are generating data, the output will not exactly match the expected output. As we walk through this exercise, the results and values shown on the instructors screen may appear different from your own. This is to be expected.
+
+
 ---
 
 ## Welcome
