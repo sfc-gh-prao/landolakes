@@ -264,11 +264,18 @@ Create a Python UDF called UDF_MARGIN_HEALTH_LABEL that takes a float margin_pct
 
 ### Step 5.1 — Open Streamlit in Snowsight
 
-1. In the left nav, click **Projects → Streamlit**
-2. Click **+ Streamlit App**
-3. Name it: `LOL_SALES_DASHBOARD`
-4. Set database to `LOL_CORTEX_LAB`, schema to `SALES_DATA`
-5. Click **Create** — a blank editor opens
+Once the python file has been generated, do the following:
+1. Copy all the code in the python file in your workspace
+2. Go to **Projects** -> **Streamlit**
+3. Click on **+ Streamlit App**
+4. For the App title, enter **Sales Dashboard**
+5. For the App location, select LOL_CORTEX_LAB for the database and PUBLIC for the schema
+6. Select **Run on warehouse** for the runtime
+7. Select the LOL_LAB_WH for the query warehouse
+8. When the app is first created, you will see a template with some python code. Overwrite it with the code you copied from your workspace.
+9. Click **Run** at the top
+
+> **Note:** You may see an error when running the Streamlit application. With the application open, use Cortex Code on the right to troubleshoot. Start the prompt with "There's an error in the app:" and paste the error. You will be given an option to copy and paste the code
 
 ### Step 5.2 — Build the Full Dashboard
 
