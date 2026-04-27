@@ -22,14 +22,12 @@
 ### Step 0.2 — Create a new workspace
 
 1. In the left nav, click **Projects → Workspaces**
-2. Click **+ Create workspace** at the top left → **Git workspace**
-3. Enter the repository URL: https://github.com/sfc-gh-prao/landolakes/
-4. Enter workspace name: EQR HOL
-5. Click **+ API Integration**  
-   Name: **EQR_HOL**  
-   Allowed Prefixes: **https://github.com/sfc-gh-prao/eqr**  
-   Leave the default selections for the remaining options and click **Create**  
-7. When you return to the create workspace menu, select **Public repository** and click **Create**
+2. Click **+ Create workspace** at the top left → **Private workspace**
+3. Enter the **Workspace Name**: LOL HOL
+5. Click **+ Add new** → SQL file
+   Name: **setup.sql**  
+6. Come back to this git repository and copy the contents of the **setup.sql** file.
+7. Paste the contents into the **setup.sql** file you created in Step 5 in your Snowflake demo account Workspace
 
 At the bottom left hand corner, ensure you see "ACCOUNTADMIN" selected. This will be important for the setup script we'll be running in the next step.
 
