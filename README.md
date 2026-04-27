@@ -23,7 +23,7 @@
 
 1. In the left nav, click **Projects → Workspaces**
 2. Click **+ Create workspace** at the top left → **Git workspace**
-3. Enter the repository URL: https://github.com/sfc-gh-prao/eqr
+3. Enter the repository URL: [https://github.com/sfc-gh-prao/eqr](https://github.com/sfc-gh-prao/landolakes)
 4. Enter workspace name: EQR HOL
 5. Click **+ API Integration**  
    Name: **EQR_HOL**  
