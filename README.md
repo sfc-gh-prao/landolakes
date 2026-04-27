@@ -201,16 +201,21 @@ Write and run two DELETE statements on the SALES table:
 Confirm how many rows were removed by each statement.
 ```
 
-```
-Fix the INVENTORY table: set any DAYS_OF_SUPPLY values that are negative to NULL — a negative value is impossible and NULL correctly represents "unknown". Confirm the fix.
-```
-
 ### Step 3.3 — Build a Reusable DQ Monitor
 
 ```
 Create a VIEW called V_DATA_QUALITY_SCORECARD in LOL_CORTEX_LAB.SALES_DATA. It should report key data quality metrics for the SALES and INVENTORY tables — percentage of null values in critical columns, count of invalid values (negative discounts, zero quantities), and a calculated overall health score from 0–100 for each table. This view should be runnable at any time to get a current picture of data quality.
 ```
 
+### Step 3.4 - Fix An Issue Found in the Resuable DQ Monitoring view
+
+```
+Fix the INVENTORY table: set any DAYS_OF_SUPPLY values that are negative to NULL — a negative value is impossible and NULL correctly represents "unknown". Confirm the fix.
+```
+Run the following statement to verify this fixed the records with NEGATIVE_DAYS_OF_SUPPLY_COUNT
+```
+SELECT * FROM LOL_CORTEX_LAB.SALES_DATA.V_DATA_QUALITY_SCORECARD;
+```
 ---
 
 ## Module 4 — Data Engineering Pipelines (10 min)
