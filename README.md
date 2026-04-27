@@ -272,7 +272,7 @@ Once the python file has been generated, do the following:
 5. For the App location, select LOL_CORTEX_LAB for the database and PUBLIC for the schema
 6. Select **Run on warehouse** for the runtime
 7. Select the LOL_LAB_WH for the query warehouse
-8. When the app is first created, you will see a template with some python code. Overwrite it with the code you copied from your workspace.
+8. When the app is first created, you will see a template (streamlit_app.py) with some python code. Overwrite it with the code you copied from your workspace.
 9. Click **Run** at the top
 
 > **Note:** You may see an error when running the Streamlit application. With the application open, use Cortex Code on the right to troubleshoot. Start the prompt with "There's an error in the app:" and paste the error. You will be given an option to copy and paste the code
