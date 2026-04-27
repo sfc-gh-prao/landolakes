@@ -262,22 +262,8 @@ Create a Python UDF called UDF_MARGIN_HEALTH_LABEL that takes a float margin_pct
 
 **Goal:** Deploy a production-ready, multi-tab sales and inventory dashboard directly in Snowsight — in under 10 minutes, with no front-end development.
 
-### Step 5.1 — Open Streamlit in Snowsight
 
-Once the python file has been generated, do the following:
-1. Copy all the code in the python file in your workspace
-2. Go to **Projects** -> **Streamlit**
-3. Click on **+ Streamlit App**
-4. For the App title, enter **Sales Dashboard**
-5. For the App location, select LOL_CORTEX_LAB for the database and PUBLIC for the schema
-6. Select **Run on warehouse** for the runtime
-7. Select the LOL_LAB_WH for the query warehouse
-8. When the app is first created, you will see a template (streamlit_app.py) with some python code. Overwrite it with the code you copied from your workspace.
-9. Click **Run** at the top
-
-> **Note:** You may see an error when running the Streamlit application. With the application open, use Cortex Code on the right to troubleshoot. Start the prompt with "There's an error in the app:" and paste the error. You will be given an option to copy and paste the code
-
-### Step 5.2 — Build the Full Dashboard
+### Step 5.1 — Build the Full Dashboard
 
 Open Cortex Code and enter:
 
@@ -301,9 +287,24 @@ Add a sidebar with: date range filter (Last 30/90 days, Last 6 months, Last 12 m
 Write the complete app and deploy it.
 ```
 
-### Step 5.3 — Run and Iterate
+### Step 5.2 — Open Streamlit in Snowsight
 
-Click **Run** in the top right. Once it loads, try these enhancement prompts:
+Once the python file has been generated, do the following:
+1. Copy all the code in the python file in your workspace
+2. Go to **Projects** -> **Streamlit**
+3. Click on **+ Streamlit App**
+4. For the App title, enter **Sales Dashboard**
+5. For the App location, select LOL_CORTEX_LAB for the database and PUBLIC for the schema
+6. Select **Run on warehouse** for the runtime
+7. Select the LOL_LAB_WH for the query warehouse
+8. When the app is first created, you will see a template (streamlit_app.py) with some python code. Overwrite it with the code you copied from your workspace.
+9. Click **Run** at the top
+
+> **Note:** You may see an error when running the Streamlit application. With the application open, use Cortex Code on the right to troubleshoot. Start the prompt with "There's an error in the app:" and paste the error. You will be given an option to copy and paste the code
+
+### Step 5.3 — Run and Iterate (Optional)
+
+You can continue to add to the application you've built using Cortex Code. Try these enhancement prompts:
 
 ```
 Add a "Download as CSV" button below each data table in the app.
