@@ -9,25 +9,39 @@
 
 ## Module 0 — Environment Setup (5 min)
 
-> **Do this before anything else.** Each person will run the setup script in their own Snowflake account. It creates the database, tables, and loads ~17,000 rows of Land O'Lakes data — takes about 3–4 minutes.
+> **Do this before anything else.** Each person has their own Snowflake demo account. You'll load the lab dataset directly into your account — it takes about 3–4 minutes to run.
 
 ### Step 0.1 — Log In
 
-1. Open your browser and go to your Snowflake account URL (provided by your instructor)
-2. Sign in with your credentials
+1. Open your browser and go to https://go.dataops.live/eqr-it-tech-huddle/instructions
+2. Register for a demo account using your email address
+3. Bookmark the URL provided at the end of the registration process. This will be the account you will be using for the lab.
+4. Disregard the "Lab Instructions" link provided at the end of the registration. This README.md will be your lab guide
+5. Sign into your Snowflake demo account with the credentials you were provided
 
-### Step 0.2 — Open a SQL Notebook
+### Step 0.2 — Create a new workspace
 
 1. In the left nav, click **Projects → Workspaces**
-2. Click **+ New** → **SQL Notebook**
-3. Confirm you are using the **`SYSADMIN`** role in the top-right corner
+2. Click **+ Create workspace** at the top left → **Git workspace**
+3. Enter the repository URL: https://github.com/sfc-gh-prao/eqr
+4. Enter workspace name: EQR HOL
+5. Click **+ API Integration**  
+   Name: **EQR_HOL**  
+   Allowed Prefixes: **https://github.com/sfc-gh-prao/eqr**  
+   Leave the default selections for the remaining options and click **Create**  
+7. When you return to the create workspace menu, select **Public repository** and click **Create**
+
+At the bottom left hand corner, ensure you see "ACCOUNTADMIN" selected. This will be important for the setup script we'll be running in the next step.
+
+> **Why ACCOUNTADMIN?** The setup script creates a database, a warehouse, and several schemas. This requires account-level privileges. You'll switch to a less-privileged role for the rest of the lab.
 
 ### Step 0.3 — Run the Setup Script
 
-1. Your instructor will share the contents of **`setup.sql`**
-2. Paste the entire script into your notebook
-3. Click **Run All** (`Cmd+Shift+Enter` / `Ctrl+Shift+Enter`)
-4. Wait for the final validation query at the bottom — you should see row counts for all 8 tables
+1. If you were able to successfully create a Git workspace, you will see a **setup.sql** file appear
+4. Click **Run All** (▶▶ button, or `Cmd+Shift+Enter` / `Ctrl+Shift+Enter`)
+5. Watch the progress — each section runs sequentially. You'll see output for each INSERT statement
+6. The final step outputs a row-count summary table — **wait until you see this before moving on**
+
 
 > **Expected output:**
 > ```
