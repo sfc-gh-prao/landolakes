@@ -510,10 +510,9 @@ What is the total estimated cost to bring all products currently below their reo
 - [ ] Request Cortex Code access for your team in your production Snowflake account
 - [ ] Identify 3 manual reporting processes that could be self-served with Cortex Code
 - [ ] Identify the 2–3 key business metrics worth encoding in a Semantic View as your source of truth
-- [ ] Book a follow-up with your Snowflake SE to scope a production Streamlit or Intelligence rollout
-- [ ] Run `cleanup.sql` to remove lab objects from your account
+- [ ] Book a follow-up with your Snowflake Account Executive, Jim Kempski, and Snowflake Solution Engineer, Pravin Rao, to scope a production Streamlit or Intelligence rollout
 
 ---
 
 *Lab prepared by Snowflake Solutions Engineering | Land O'Lakes Account Team*
-*Questions? Contact your SE: Pravin Rao*
+*Questions? Contact your SE: Pravin Rao (pravin.rao@snowflake.com)*
