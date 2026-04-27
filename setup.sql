@@ -4,7 +4,7 @@
 -- Estimated run time: 3-5 minutes on SMALL warehouse
 -- ============================================================
 
-USE ROLE SYSADMIN;
+USE ROLE ACCOUNTADMIN;
 
 -- ============================================================
 -- SECTION 1: ENVIRONMENT SETUP
