@@ -35,7 +35,7 @@ At the bottom left hand corner, ensure you see "ACCOUNTADMIN" selected. This wil
 
 ### Step 0.3 — Run the Setup Script
 
-1. In your LOL HOL workspace, you will see a ▶ button at the top. 
+1. In your LOL HOL workspace, go to your setup.sql script. You will see a ▶ button at the top. 
 2. In the drop down next to ▶ click **Run All** 
 3. Watch the progress — each section runs sequentially. You'll see output for each INSERT statement
 4. The final step outputs a row-count summary table — **wait until you see this before moving on**
