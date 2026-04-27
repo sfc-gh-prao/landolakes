@@ -35,10 +35,10 @@ At the bottom left hand corner, ensure you see "ACCOUNTADMIN" selected. This wil
 
 ### Step 0.3 — Run the Setup Script
 
-1. If you were able to successfully create a Git workspace, you will see a **setup.sql** file appear
-4. Click **Run All** (▶▶ button, or `Cmd+Shift+Enter` / `Ctrl+Shift+Enter`)
-5. Watch the progress — each section runs sequentially. You'll see output for each INSERT statement
-6. The final step outputs a row-count summary table — **wait until you see this before moving on**
+1. In your LOL HOL workspace, you will see a ▶ button at the top. 
+2. In the drop down next to ▶, click **Run All** 
+3. Watch the progress — each section runs sequentially. You'll see output for each INSERT statement
+4. The final step outputs a row-count summary table — **wait until you see this before moving on**
 
 
 > **Expected output:**
